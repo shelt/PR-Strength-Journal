@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/RecordPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content"
+        android:onClick="onClickPR"
+        android:src="@drawable/ic_recordpr"
+    />
+
+    <ImageButton
+        android:id="@+id/SetGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/RecordPR"
+        android:layout_alignLeft="@+id/RecordPR"
+        android:layout_below="@+id/RecordPR"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content"
+        android:onClick="onClickSetGoal"
+        android:src="@drawable/ic_setgoal"
+    />
+
+    <ImageButton
+        android:id="@+id/ViewProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RecordPR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content"
+        android:onClick="onClickViewProgress"
+        android:src="@drawable/ic_viewprogress" />
+
+    <TextView
+        android:id="@+id/bebas_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ViewProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:text="@string/menutext"
+        android:textColor="@color/dark_grey"
+        android:textSize="20sp" />
+
+</RelativeLayout>
