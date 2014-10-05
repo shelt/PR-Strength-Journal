@@ -4,16 +4,40 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
+    <ImageView
+        android:id="@+id/oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-120px"
+        android:layout_marginLeft="-999px"
+        android:layout_marginRight="-999px"
+        android:src="@drawable/oval" />
 
     <TextView
         android:id="@+id/bebas_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ViewProgress"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:text="@string/menutext"
+        android:layout_centerVertical="true"
+        android:text="@string/enter_weight"
         android:textColor="@color/dark_grey"
         android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oval"
+        android:layout_marginBottom="-60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
