@@ -15,8 +15,10 @@
 bin/
 gen/
 
-# Local configuration file (sdk path, etc)
+# Local configuration files (sdk path, etc)
 local.properties
+project.properties
+
 
 # Windows thumbnail db
 Thumbs.db
@@ -27,6 +29,7 @@ Thumbs.db
 # Eclipse project files
 .classpath
 .project
+jarlist.cache
 
 # Android Studio
 .idea
